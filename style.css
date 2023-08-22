@@ -1,0 +1,145 @@
+*{
+   box-sizing: border-box; 
+}
+body {
+    background-image: url("pictures/habitat67.jpg");
+    background-blend-mode:overlay;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,h2,h3 {
+    font-family: 'Khand', sans-serif;
+}
+#mainArticle img {
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    max-width: 95%;
+    margin: 0 auto;
+}
+#mainArticle figure:hover img{
+    max-width: 100%;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+}
+#mainArticle figure:hover figcaption{
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+#mainArticle figure:hover {
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 0;
+}
+#mainArticle figure {
+    box-sizing: border-box;
+    float: right;
+    text-align: center;
+    max-width: 50%;
+    height: auto;
+    margin-top: 0;
+    margin-right: 0;
+    border: 2px solid black;
+    padding: 5% 5% 1% 5%;
+    transition: 0.5s;
+}
+#mainArticle figcaption {
+    font-family: 'Khand', sans-serif;
+    font-weight: 100;
+    line-height: 1em;
+    padding: 2px;
+    margin-top: 5%;
+    opacity: 1;
+    transition: 0.2s;
+}
+#headline {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    font-size: 7em;
+    transition: 0.2s; 
+    animation: opening 3s forwards;
+    overflow: hidden;
+}
+@keyframes opening {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#mainArticle {
+    background-color: white;
+    box-sizing: border-box;
+    max-width: 860px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    font-size: medium;
+}
+#mainArticle p.body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 1em;
+    line-height: 1.4em;
+
+}
+#mainArticle p.contentAddition {
+    font-family: 'Khand', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+#mainArticle h2 {
+    margin: 0;
+}
+#mainArticle h3 {
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0.95em;
+}
+
+@media all and (max-width: 650px) {
+    #headline {
+        font-size: 5em;
+        transition: 0.2s; 
+    }
+    #mainArticle img {
+       
+        box-sizing: border-box;
+        text-align: center;
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    #mainArticle figure {
+        box-sizing: border-box;
+        float: none;
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border: 2px solid black;
+        padding: 5%;
+        transition: 0.5s;
+    }
+    #mainArticle figcaption {
+        font-family: 'Khand', sans-serif;
+        font-weight: 100;
+        line-height: 0;
+        margin-top: 0;
+        opacity: 0;
+        transition: 0.2s;
+    }
+}
